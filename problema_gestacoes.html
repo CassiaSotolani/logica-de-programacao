@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pularLinha() {
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+    }
+
+    var anoInicial = 1500;
+    var anoAtual = 2022;
+    var mediaDeAnos = 28;
+    var quantosAnosPassou = Math.round((anoAtual - anoInicial) / mediaDeAnos);
+
+    mostrar("Passaram-se aproximadamente" + quantosAnosPassou + " gerações.");
+
+</script>

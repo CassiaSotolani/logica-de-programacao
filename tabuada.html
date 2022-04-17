@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pularLinha() {
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        pularLinha();
+    }
+
+    mostrar("<h2>Aplicação de tabuada.</h2>");
+    var numeroTabuada = parseInt(prompt("Você quer a tabuada de qual número?"));
+
+    for(var i = 0; i <= 10; i++) {
+        mostrar(numeroTabuada + " x " + i + " = " + (numeroTabuada * i));
+    }
+
+</script>

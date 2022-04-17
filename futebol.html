@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pularLinha() {
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        pularLinha();
+    }
+
+    var vitorias = parseInt(prompt("Informe o número de vitórias."));
+    var empates = parseInt(prompt("Informe o número de empates."));
+    var resultadoVitorias = vitorias * 3;
+    var totalPontos = resultadoVitorias + empates;
+    var totalPontosAnoPassado = 28;
+
+    mostrar("Seu time fez " + totalPontos + " pontos no campeonato desse ano.");
+
+    if(totalPontos > totalPontosAnoPassado) {
+        mostrar("Seu time fez mais pontos esse ano. Parabéns!");
+    } else if(totalPontos < totalPontosAnoPassado) {
+        mostrar("Seu time fez menos pontos esse ano. Que pena!");
+    } else {
+        mostrar("Nesse ano, seu time fez a mesma quantidade de pontos que o ano passado.");
+    }
+
+</script>

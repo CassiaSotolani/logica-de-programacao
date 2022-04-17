@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pularLinha() {
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        pularLinha();
+    }
+
+    var numeroPensado = Math.round(Math.random() * 10);
+    var quantidadeChutes = 0;
+    
+    for(var i = 0; quantidadeChutes < 3; i++) {
+        var chute = parseInt(prompt("Informe um número de 0 à 10."));
+        if(chute == numeroPensado) {
+            alert("Parabéns, você acertou!!");
+            quantidadeChutes = 3;
+        } else {
+            alert("Você errou!");
+        }
+        quantidadeChutes++;
+    }
+
+    mostrar("O número pensado era " + numeroPensado + ".<br>FIM!!!");
+
+</script>

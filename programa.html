@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pularLinha() {
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        pularLinha();
+    }
+
+    var ano = 2022;
+
+    mostrar("Cassia tem " + (ano - 1991) + " anos.");
+    mostrar("Luana tem " + (ano - 1994) + " anos.");
+    mostrar("Sônia tem " + (ano - 1963) + " anos.");
+
+    var idadeCassia = ano - 1991;
+    var idadeLuana = ano - 1994;
+    var idadeSonia = ano - 1963;
+    var media = Math.round((idadeCassia + idadeLuana + idadeSonia) / 3);
+
+    mostrar("A média das idades é " + media);
+
+</script>

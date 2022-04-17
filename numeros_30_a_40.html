@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pularLinha() {
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        pularLinha();
+    }
+
+    var numero = 30;
+
+    while(numero <= 40) {
+        if(numero !== 33 && numero !== 37) {
+            mostrar(numero);
+        }
+        numero++;
+    }
+
+</script>

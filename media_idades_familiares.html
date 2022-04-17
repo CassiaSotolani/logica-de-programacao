@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pularLinha() {
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        pularLinha();
+    }
+
+    mostrar("<h1>Sistema para calcular a média das idades de uma família.</h1>");
+
+    var quantidadeFamiliares = parseInt(prompt("Qual a sua quantidade de familiares?"));
+    var somaIdades = 0;
+
+    for(var i = 1; i <= quantidadeFamiliares; i++) {
+        var totalIdades = parseInt(prompt("Informe a " + i + "ª pessoa."));
+        var somaIdades = somaIdades + totalIdades;
+    }
+    var mediaIdade = Math.round(somaIdades / quantidadeFamiliares);
+    mostrar("A média da sua família é " + mediaIdade + ".");
+
+</script>

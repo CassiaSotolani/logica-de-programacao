@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pularLinha() {
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        pularLinha();
+    }
+
+    mostrar("<h3>Até quando teve copa?</h3>");
+    var anoComecouCopa = 1930;
+    var anoAtual = parseInt(prompt("Informe até qual ano você quer pesquisar."));
+
+    mostrar("Com for");
+    for(var i = 0; anoComecouCopa <= anoAtual; i++) {
+        mostrar("Teve copa em " + anoComecouCopa + ".");
+        anoComecouCopa = anoComecouCopa + 4;
+    }
+
+    var contador = 1930;
+    mostrar("Com while");
+    while(contador <= anoAtual) {
+        mostrar("Teve copa em " + contador + ".");
+        contador = contador + 4;
+    }
+
+
+</script>
